@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Blog with Visual Editing in Sanity CMS
 
-## Getting Started
+🚧 **This project is currently under active development** 🚧
 
-First, run the development server:
+A modern blog application built with Next.js 14, TypeScript, Tailwind CSS and Visual Editing in Sanity CMS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Quick Start
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repo:
+   ```
+   git clone https://github.com/norbertgoltl/blog-built-with-next-js-and-visual-editing-in-sanity.git
+   cd blog-built-with-next-js-and-visual-editing-in-sanity
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Set up `.env.local`:
+   ```
+   NEXT_PUBLIC_SANITY_PROJECT_ID=your_sanity_project_id
+   NEXT_PUBLIC_SANITY_DATASET=your_sanity_dataset
+   SANITY_API_READ_TOKEN=your_sanity_api_token
+   ```
 
-## Learn More
+4. Run the dev server:
+   ```
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+5. Open [http://localhost:3000](http://localhost:3000)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+6. Access Sanity Studio at [http://localhost:3000/studio](http://localhost:3000/studio)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Key Features
 
-## Deploy on Vercel
+- Next.js 14 with App Router
+- TypeScript
+- Sanity CMS integration with Visual Editing
+- Tailwind CSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `/app`: Next.js pages and API routes
+- `/components`: React components
+- `/sanity`: Sanity CMS config and schemas
+
+## Sanity Studio
+
+The Sanity Studio is accessible at the `/studio` route in your browser. Use this to manage your content and take advantage of the visual editing features.
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
+
+---
+
+**Note**: This project is in development. Features may be incomplete or subject to change.
